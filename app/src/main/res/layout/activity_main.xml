@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/lay_cards"
         android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_alighParentTop="true"
+
         android:orientation="horizontal">
         <ImageView
 android:id="@+id/iv_card1"
@@ -32,19 +32,33 @@ android:id="@+id/iv_card1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lay_cards"
-        android:centerHorizitation="true"
+
+
         android:text="rozdej"
-        android:layout_marginTOP="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteY="407dp" />
+
     <LinearLayout
         android:id="@+id/lay_points"
         android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_alighParentBottom="true"
+
         android:orientation="horizontal">
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/iv_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:text="hrac 2 : 0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/iv_player1"
@@ -57,17 +71,24 @@ android:id="@+id/iv_card1"
         android:text="hrac 1 : 0"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="55dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/iv_player2"
+        android:id="@+id/iv_war"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/b_deal"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="148dp"
         android:layout_weight="1"
         android:scaleType="centerInside"
-        android:textSize="24sp"
-        android:text="hrac 2 : 0"
+        android:text="WAR"
+        android:textSize="72sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="279dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_deal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
